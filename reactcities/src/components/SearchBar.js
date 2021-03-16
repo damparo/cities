@@ -1,9 +1,10 @@
 import React from "react";
+import "../styles/SearchBar.css"
 
 function SearchBar() {
   return (
   
-      <h3>welcome, lets find your next destination.</h3>
+      <h3 id="mainfont">welcome, lets find your next destination.</h3>
     
  
   );
