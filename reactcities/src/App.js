@@ -1,8 +1,19 @@
 import React from "react";
-import SearchBar from "./components/SearchBar";
+import SearchBar from "./components/SearchBar/SearchBar";
+import Navbar from "./components/Navbar/Navbar";
+
 
 function App() {
-  return  <SearchBar />;
+  return  (
+
+    <div>
+      
+      <Navbar />
+
+      <SearchBar />
+
+    </div>
+  )
     
   
 }
