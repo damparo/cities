@@ -1,33 +1,32 @@
 import React from "react";
+import "./Navbar.css"
 
 function Navbar() {
   return (
     <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo">
-          Logo
-        </a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <div className="nav-wrapper">
+        <ul id="nav-mobile" className="right hide-on-med-and-down black-text">
           <li>
-            <a href="sass.html">Sass</a>
+            <a href="">Search</a>
           </li>
           <li>
-            <a href="badges.html">Components</a>
+            <a href="">Your Cities</a>
           </li>
           <li>
-            <a href="collapsible.html">JavaScript</a>
+            <a href="">Exit</a>
           </li>
         </ul>
       </div>
+
       <ul className="sidenav" id="mobile-demo">
         <li>
-          <a href="sass.html">Sass</a>
+          <a href="">Search</a>
         </li>
         <li>
-          <a href="badges.html">Components</a>
+          <a href="">Your Cities</a>
         </li>
         <li>
-          <a href="collapsible.html">JavaScript</a>
+          <a href="">Exit</a>
         </li>
       </ul>
     </nav>

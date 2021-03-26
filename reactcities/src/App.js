@@ -10,7 +10,7 @@ function App() {
       
       <Navbar />
 
-      <SearchBar />
+      {/* <SearchBar /> */}
 
     </div>
   )
