@@ -1,11 +1,19 @@
 import React from "react";
-import "./Navbar.css"
+import "./Navbar.css";
 
 function Navbar() {
   return (
     <nav>
       <div className="nav-wrapper">
-        <ul id="nav-mobile" className="right hide-on-med-and-down black-text">
+        <a
+          href="#"
+          data-target="mobile-demo"
+          className="sidenav-trigger"
+        >
+          <i className="material-icons">menu</i>
+        </a>
+
+        <ul className="right hide-on-med-and-down">
           <li>
             <a href="">Search</a>
           </li>
