@@ -1,4 +1,23 @@
 
+.nav-wrapper {
+    background-color: white;
+    /* color: black; */
+}
+
+nav ul a{
+    color:black;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+nav .sidenav-trigger {
+    color: black;
+}
+
+.sidenav{
+    font-family: 'Rubik', sans-serif;
+}
+
 /* li {
     color: yellow;
 } */

@@ -13,7 +13,7 @@ function Navbar() {
           <i className="material-icons">menu</i>
         </a>
 
-        <ul className="right hide-on-med-and-down">
+        <ul className="right hide-on-med-and-down black-text">
           <li>
             <a href="">Search</a>
           </li>
