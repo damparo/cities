@@ -1,5 +1,25 @@
 #mainfont {
 
     font-family: 'Rubik', sans-serif;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+
 
 }
+
+.form-group{
+
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#search {
+    font-size: 25px;
+    /* border-bottom: none; */
+    /* outline: none; */
+    border-bottom: none!important;
+    box-shadow: none!important;
+}
+

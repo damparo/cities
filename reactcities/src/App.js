@@ -22,7 +22,7 @@ class App extends React.Component{
         
         <Navbar />
   
-        {/* <SearchBar /> */}
+        <SearchBar />
   
       </div>
     )
