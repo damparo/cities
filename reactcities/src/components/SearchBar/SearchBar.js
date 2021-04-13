@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CityDisplay from "../CityDisplay/CityDisplay";
 
 import "./SearchBar.css";
@@ -6,6 +6,13 @@ import "./SearchBar.css";
 
 function SearchBar () {
 
+  const [cityName, setCityName] = useState();
+
+  setCityName = (e) => {
+    this.setState({
+      cityName: e.target.value,
+    });
+  }
 
   return (
     <div>
@@ -15,16 +22,17 @@ function SearchBar () {
         <div className="form-group">
           
           <input
-            // // onChange={props.handleInputChange}
-            // value={props.value}
             name="search"
             type="text"
             className="form-control"
             placeholder="search for a city"
             id="search"
+            onChange={this.handleFormChange}
+            
             // onChange = {(e) => setKeyword(e.target.value)}
           />
-            <CityDisplay  name="lionface"/>
+            <CityDisplay  name={this.setState.cityName}
+            />
           <br />
           {/* <button onClick={props.handleFormSubmit} className="btn btn-primary"> */}
           {/* <button className="btn btn-primary">
