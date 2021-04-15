@@ -8,17 +8,15 @@ function SearchBar () {
 
   const [cityName, setCityName] = useState();
 
-  setCityName = (e) => {
-    this.setState({
-      cityName: e.target.value,
-    });
+  const handleSubmit = e => {
+    e.preventDefault();
   }
 
   return (
     <div>
       <h3 id="mainfont">Welcome, let's find your next dream city.</h3>
 
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="form-group">
           
           <input
@@ -27,11 +25,10 @@ function SearchBar () {
             className="form-control"
             placeholder="search for a city"
             id="search"
-            onChange={this.handleFormChange}
-            
-            // onChange = {(e) => setKeyword(e.target.value)}
+            onChange={e => setCityName(e.target.value)}
+           
           />
-            <CityDisplay  name={this.setState.cityName}
+            <CityDisplay  name={cityName}
             />
           <br />
           {/* <button onClick={props.handleFormSubmit} className="btn btn-primary"> */}
