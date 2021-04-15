@@ -3,14 +3,17 @@ import CityDisplay from "../CityDisplay/CityDisplay";
 
 import "./SearchBar.css";
 
-
-function SearchBar () {
-
+function SearchBar() {
   const [cityName, setCityName] = useState();
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-  }
+  };
+
+function returnCity(){
+
+  console.log(cityName);
+}
 
   return (
     <div>
@@ -18,29 +21,22 @@ function SearchBar () {
 
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          
           <input
             name="search"
             type="text"
             className="form-control"
             placeholder="search for a city"
             id="search"
-            onChange={e => setCityName(e.target.value)}
-           
+            onChange={(e) => setCityName(e.target.value)}
           />
-            <CityDisplay  name={cityName}
-            />
-          <br />
-          {/* <button onClick={props.handleFormSubmit} className="btn btn-primary"> */}
-          {/* <button className="btn btn-primary">
-            Search
-          </button> */}
+          <i onClick={returnCity} for="search" className="small material-icons">search</i>
         </div>
       </form>
+
+
+      <CityDisplay name={cityName} />
     </div>
   );
 }
-
-
 
 export default SearchBar;
