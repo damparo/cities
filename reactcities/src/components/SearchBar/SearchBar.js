@@ -10,16 +10,27 @@ function SearchBar() {
     e.preventDefault();
   };
 
-function returnCity(){
+  const [showCity, setShowCity] = useState(false);
+  const returnCity = ()=> setShowCity(true);
 
-  console.log(cityName);
-}
+
+  // return (
+
+  //   <CityDisplay name={cityName} id="cityblock"/>
+  // )
+
+
+
+  
+
+
+
 
   return (
     <div>
       <h3 id="mainfont">Welcome, let's find your next dream city.</h3>
 
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} id="searchform">
         <div className="form-group">
           <input
             name="search"
@@ -33,8 +44,12 @@ function returnCity(){
         </div>
       </form>
 
-
-      <CityDisplay name={cityName} />
+      { showCity ? 
+      
+      <CityDisplay name={cityName} id="cityblock"
+      />
+      : null
+    }
     </div>
   );
 }
