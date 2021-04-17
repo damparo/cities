@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CityDisplay from "../CityDisplay/CityDisplay";
+import Welcome from "../Welcome/Welcome";
 
 import "./SearchBar.css";
 
@@ -10,15 +11,19 @@ function SearchBar() {
     e.preventDefault();
   };
 
+
+
   const [showCity, setShowCity] = useState(false);
   const returnCity = () => setShowCity(true);
   const hidecity = () => setShowCity(false);
 
   return (
     <div>
-      <h3 id="mainfont">Welcome, let's find your next dream city.</h3>
-
-      <form onSubmit={handleSubmit} id="searchform">
+      <Welcome />
+  
+    
+      <form onSubmit={handleSubmit} id="searchform"
+      >
         <div className="form-group">
           <input
             name="search"
@@ -34,8 +39,17 @@ function SearchBar() {
           </i>
         </div>
       </form>
+    
 
-      {showCity ? <CityDisplay name={cityName} id="cityblock" /> : null}
+      {showCity ? <CityDisplay name={cityName} id="cityblock" 
+      
+      
+      
+      // <i onClick={returnCity} for="search" className="small material-icons">
+      //       search
+      //     </i>
+      
+      /> : null}
     </div>
   );
 }

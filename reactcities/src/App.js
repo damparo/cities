@@ -5,9 +5,10 @@ import SearchBar from "./components/SearchBar/SearchBar";
 import Navbar from "./components/Navbar/Navbar";
 
 
+
 class App extends React.Component{
 
-
+  
   componentDidMount(){
 
     let sidenav = document.querySelector("#mobile-demo");
