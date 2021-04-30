@@ -57,6 +57,7 @@ function SearchBar() {
             onChange={(e) => setCityName(e.target.value)}
             onClick={hidecity}
           />
+          
           <i onClick={() => {handleClick();returnCity()}} for="search" className="small material-icons">
             search
           </i>
