@@ -30,7 +30,10 @@ function SearchBar() {
 
   useEffect ( () => {
 
-      axios.get(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${cityPic}&key=${process.env.REACT_APP_PLACES_API_KEY}&inputtype=textquery&fields=name,photos`).then( res => {
+      // axios.get(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${cityPic}&key=${process.env.REACT_APP_PLACES_API_KEY}&inputtype=textquery&fields=name,photos`).then( res => {
+      //   console.log(res)
+      // })
+      fetch(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${cityPic}&key=${process.env.REACT_APP_PLACES_API_KEY}&inputtype=textquery&fields=name,photos`).then( res => {
         console.log(res)
       })
       .catch( err => {
